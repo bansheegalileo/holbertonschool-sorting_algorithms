@@ -18,7 +18,7 @@ void insertion_sort_list(listint_t **list)
 	{
 		if (c->n > c->next->n)
 		{
-			swap_forward(c);
+			sworp_lr(c);
 		}
 		else
 			c = c->next;
@@ -28,12 +28,12 @@ void insertion_sort_list(listint_t **list)
 }
 
 /**
- * swap_backward -swapnodes rl
+ * sworp_rl -swapnodes rl
  * @c: list
  *
  **/
 
-void swap_backward(listint_t *c)
+void sworp_rl(listint_t *c)
 {
 	listint_t *uwu, *hed;
 
@@ -60,12 +60,12 @@ void swap_backward(listint_t *c)
 }
 
 /**
- * swap_forward -swap2nodes lr
+ * sworp_lr -swap2nodes lr
  * @c: list
  *
  **/
 
-void swap_forward(listint_t *c)
+void sworp_lr(listint_t *c)
 {
 	listint_t *uwu, *hed;
 
@@ -94,5 +94,5 @@ void swap_forward(listint_t *c)
 	while (hed->prev != NULL)
 		hed = hed->prev;
 	print_list(hed);
-	swap_backward(c->prev);
+	sworp_rl(c->prev);
 }

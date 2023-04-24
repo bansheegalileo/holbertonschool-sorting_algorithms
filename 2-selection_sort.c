@@ -30,12 +30,12 @@ void selection_sort(int *array, size_t size)
 }
 
 /**
- * _swap - swap 2 nums
+ * sworp - swap 2 nums
  * @a: int a
  * @b: int b
  **/
 
-void _swap(int *a, int *b)
+void sworp(int *a, int *b)
 {
 	int uwu;
 

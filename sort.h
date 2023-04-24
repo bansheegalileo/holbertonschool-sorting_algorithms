@@ -24,8 +24,10 @@ void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
-void _swap(int *a, int *b);
-void swap_forward(listint_t *c);
-void swap_backward(listint_t *c);
+void sworp(int *a, int *b);
+void sworp_lr(listint_t *c);
+void sworp_rl(listint_t *c);
+void qu_so_arr(int *arr, int mn, int lt, size_t size);
+int banana(int *arr, int mn, int lt, size_t size);
 
 #endif
