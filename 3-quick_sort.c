@@ -56,8 +56,8 @@ int banana(int *arr, int mn, int lt, size_t size)
 /**
  * qu_so_arr - quick sort array
  * @arr: arr
- * @min: min
- * @last: last
+ * @mn: min
+ * @lt: last
  * @size: size
  * Return: Nothing
  */
