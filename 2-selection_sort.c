@@ -23,7 +23,7 @@ void selection_sort(int *array, size_t size)
 		}
 		if (mn != cancer)
 		{
-			_swap(&array[cancer], &array[mn]);
+			sworp(&array[cancer], &array[mn]);
 			print_array(array, size);
 		}
 	}
